@@ -3,10 +3,10 @@ import './navigation.css'; // Đảm bảo bạn có file CSS này
 
 const Navigation = () => {
   return (
-    <header class="navbar">
-      <div class="flex flex-col justify-between h-full">
-        <div class="flex flex-col justify-center items-center p-4 text-white">
-          <a href="#home" class="vertical-text text-base uppercase border-l-[2.5px] border-yellow hover:border-l-[2.5px] hover:border-yellow">
+    <header className="navbar">
+      <div className="flex flex-col justify-between h-full">
+        <div className="flex flex-col justify-center items-center p-4 text-white">
+          <a href="#home" className="vertical-text text-base uppercase border-l-[2.5px] border-yellow hover:border-l-[2.5px] hover:border-yellow">
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -24,11 +24,11 @@ const Navigation = () => {
           </a>
         </div>
 
-        <nav class="flex flex-col items-center gap-6 text-white p-4">
-          <a href="#world-map" class="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Hành trình</a>
-          <a class="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Nhân Vật Có Tầm Ảnh Hưởng Đến Bác Hồ</a>
-          <a class="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Di Sản</a>
-          <a href="#quiz" class="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Q&A</a>
+        <nav className="flex flex-col items-center gap-6 text-white p-4">
+          <a href="#world-map" className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Hành trình</a>
+          <a href="#world-map" className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Nhân Vật Có Tầm Ảnh Hưởng Đến Bác Hồ</a>
+          <a href="#world-map" className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Di Sản</a>
+          <a href="#quiz" className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Q&A</a>
         </nav>
       </div>
     </header>

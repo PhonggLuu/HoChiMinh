@@ -12,7 +12,16 @@ const Home = () => {
             backgroundRepeat: 'no-repeat',
         }}
     >
-        <div className="absolute top-0 left-0 bg-black opacity-100 w-full sm:w-[50vw] h-[100vh]">
+        <div className="absolute top-0 left-0 bg-black opacity-70 w-full sm:w-[50vw] h-[100vh]">
+            <img
+                id="hcm"
+                src="https://backan.gov.vn/SiteCollectionDocuments/461-073e9c731a6f.jpg"
+                alt="Chủ tịch Hồ Chí Minh"
+                className="w-full h-full object-cover"
+            />
+        </div>
+
+        <div className="absolute top-0 right-0 bg-black opacity-100 w-full sm:w-[50vw] h-[100vh]">
             <img
                 id="nha-rong"
                 src="https://danviet.mediacdn.vn/thumb_w/650/2020/5/26/929-15904910607461031609626.jpg"
@@ -33,27 +42,27 @@ const Home = () => {
             </span>
             </h1>
         </div>
-        <div class="absolute top-[5vh] right-[10vw] mt-10">
-            <h1 class="font-semibold mb-6">
-                <span class="text-black text-base 3xl:text-2xl ps-1 font-extrabold vertical-text relative">
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>B</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>Ế</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>N</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}> </span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>N</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>H</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>À</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}> </span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>R</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>Ồ</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>N</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>G</span>
+        <div className="absolute top-[5vh] right-[10vw] mt-10">
+            <h1 className="font-semibold mb-6">
+                <span className="text-black text-base 3xl:text-2xl ps-1 font-extrabold vertical-text relative">
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>B</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>Ế</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>N</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}> </span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>N</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>H</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>À</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}> </span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>R</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>Ồ</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>N</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>G</span>
                 </span>
-                <span class="text-black text-[90px] 3xl:text-[120px] leading-[90px] font-extrabold vertical-text relative">
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>1</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>9</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>1</span>
-                    <span class="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>1</span>
+                <span className="text-black text-[90px] 3xl:text-[120px] leading-[90px] font-extrabold vertical-text relative">
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>1</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>9</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>1</span>
+                    <span className="char text-black" style={{transform: 'translate(0px, 0px)', opacity: 1}}>1</span>
                 </span>
             </h1>
         </div>
@@ -69,8 +78,8 @@ const Home = () => {
                 opacity: 1,
                 }}
             >
-                <div className="text-2xl font-extrabold">"Không có gì quý hơn độc lập, tự do"</div>
-                <div className="text-3xl font-extrabold">
+                <div className="text-2xl font-extrabold" style={{color: "black"}}>"Không có gì quý hơn độc lập, tự do"</div>
+                <div className="text-3xl font-extrabold" style={{color: "black"}}>
                     17/7/1966
                 </div>
                 <div className="text-5xl font-extrabold leading-[50px]">
@@ -80,18 +89,7 @@ const Home = () => {
         </div>
         <div className="flex-1 h-full object-center">
           <div className="flex-1 h-full object-center">
-            <img
-              src="fist.png"
-              alt="Fist"
-              className="max-h-[100vh] mx-auto object-contain"
-              style={{
-                translate: "none",
-                rotate: "none",
-                scale: "none",
-                opacity: 1,
-                transform: "translate(0px, 0%)",
-              }}
-            />
+                
           </div>
         </div>
         <div className="flex-1 text-black bg-yellow pl-6 pr-6 pb-3 pt-12 rounded-lg shadow-lg">
@@ -107,13 +105,13 @@ const Home = () => {
                 /> */}
               </div>
             </div>
-                <video
+                {/* <video
                   src="70Y-DienBienPhu.mp4"
                   preload="auto"
                   controls
                   style={{ width: "100%", height: "100%" }}
                   className="w-[230px] h-[130px] 3xl:w-[250px] 3xl:h-[150px] object-cover rounded-md"
-                ></video>
+                ></video> */}
             <div>
             </div>
           </div>

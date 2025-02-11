@@ -117,18 +117,20 @@ const QA = () => {
 
   if (isQuizFinished) {
     return (
-      <div className="App">
-        <h1>Q&A Quiz</h1>
-        <p>Bạn đã trả lời hết tất cả câu hỏi!</p>
+      <div id="quiz" className="section-container">
+        <h1 className="section-title">Quizz</h1>
+        <div className="quiz-section">
+          <p>Bạn đã trả lời hết tất cả câu hỏi!</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div id="quiz" class="section-container">
-        <h1 class="section-title">Quizz</h1>
-        <div class="quiz-section">
-            <div class="quiz-question">
+    <div id="quiz" className="section-container">
+        <h1 className="section-title">Quizz</h1>
+        <div className="quiz-section">
+            <div className="quiz-question">
                 <h2>{currentQuestion.question}</h2>
                 {currentQuestion.options.map((option, index) => {
                     let optionClass = "";

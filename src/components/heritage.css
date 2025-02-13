@@ -1,3 +1,9 @@
+/* Default styling */
+#heritage {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
 .overflow-hidden {
     overflow: hidden;
 }
@@ -184,4 +190,25 @@ img, svg, video, canvas, audio, iframe, embed, object {
 }
 .relative {
     position: relative;
+}
+@media (max-width: 768px) {
+    .context-content .left-side {
+        width: 100%;
+        height: 100vh;
+    }
+    .context-content .right-side {
+        position: absolute; /* Đảm bảo right-side chồng lên left-side */
+        width: 100%;
+        height: 100%;
+      }
+    .context-content-title {
+        margin: 0;
+        padding-left: 10px;
+    }
+    .context-content-title p {
+        font-size: 15px;
+        white-space: normal; /* Allow text to break into multiple lines */
+        word-wrap: break-word; /* Handle long words */
+        max-width: 100%; /* Ensure the title doesn't overflow */
+    }
 }

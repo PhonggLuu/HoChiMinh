@@ -22,6 +22,7 @@ const Heritage = () => {
                   lineHeight: "1.4",
                   textAlign: "center",
                   textTransform: "uppercase",
+                  marginLeft: "20 px",
                   textShadow:
                     "rgba(39, 34, 27, 0.4) 0.0441942em 0.0441942em 0em",
                 }}
@@ -50,15 +51,15 @@ const Heritage = () => {
               </h2>
               <div className="context-content">
               <div
-  className="left-side"
-  style={{
-    backgroundImage:
-      'url("https://www.nxbctqg.org.vn/img_data/images/590078416353_a4aeee8b-6cc8-4b00-b8f7-345c16fc650b.jpg")',
-    backgroundSize: "cover",
-    backgroundPosition: "top center", // Đặt ảnh bắt đầu từ trên, canh giữa theo chiều ngang
-    backgroundRepeat: "no-repeat",
-  }}
->
+                className="left-side"
+                style={{
+                  backgroundImage:
+                    'url("https://www.nxbctqg.org.vn/img_data/images/590078416353_a4aeee8b-6cc8-4b00-b8f7-345c16fc650b.jpg")',
+                  backgroundSize: "cover",
+                  backgroundPosition: "top center", // Đặt ảnh bắt đầu từ trên, canh giữa theo chiều ngang
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
 
                   <div className="context-content-title">
                     <span style={{ fontSize: "28px" }}>
@@ -75,8 +76,10 @@ const Heritage = () => {
                     >
                       Tư tưởng cách mạng vô sản
                       <br />
-                      Ảnh hưởng của Hồ Chí Minh đối với phong trào giải phóng
-                      dân tộc trên thế giới
+                      <p>
+                        Ảnh hưởng của Hồ Chí Minh đối với phong
+                        trào giải phóng dân tộc trên thế giới
+                      </p>
                     </span>
                   </div>
                 </div>

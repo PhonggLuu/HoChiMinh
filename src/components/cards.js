@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
 import ReactDOM from 'react-dom';
 import './cards.scss';
@@ -18,7 +18,25 @@ const Card = ({ image, title, content }) => (
 
 const Carousel = ({ children }) => {
   const [active, setActive] = useState(2);
+  const [maxVisible, setMaxVisible] = useState(MAX_VISIBILITY);
   const count = React.Children.count(children);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 480) {
+        setMaxVisible(1);
+      } else if (window.innerWidth <= 768) {
+        setMaxVisible(2);
+      } else {
+        setMaxVisible(MAX_VISIBILITY);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Check on load
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   
   return (
     <div className='carousel'>

@@ -109,3 +109,57 @@ $card-size: 23rem;
     transform: translateX(100%) translatey(-50%);
   }
 }
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+    padding: 10px;
+  }
+  /* Căn giữa phần tử cha */
+  .card-container {
+    --max-visible: 1;
+    filter: none !important;
+    opacity: 1 !important; /* Đảm bảo không có opacity mờ */
+    visibility: visible; /* Đảm bảo phần tử không bị ẩn */
+    display: block;      /* Đảm bảo phần tử được hiển thị */
+    justify-content: center;  /* Căn giữa theo chiều ngang */
+    align-items: center;      /* Căn giữa theo chiều dọc */
+    position: absolute;       /* Sử dụng position để căn giữa trong một container */
+    top: 50%;                 /* Đặt phần tử ở giữa chiều dọc */
+    left: 50%;                /* Đặt phần tử ở giữa chiều ngang */
+    transform: translate(-40%, -50%);  /* Điều chỉnh lại để chính xác căn giữa */
+  }
+
+  .card .text-content {
+    margin: 10px;
+    max-height: calc(100%);
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  h2 {
+    font-size: 1.1rem; /* Giảm kích thước h2 trên màn hình nhỏ */
+  }
+
+  p {
+    opacity: 1 !important; /* Đảm bảo không có opacity mờ */
+    font-size: 0.9rem; /* Giảm kích thước chữ cho <p> */
+    line-height: 1.4; /* Giảm khoảng cách dòng cho <p> */
+    margin-bottom: 0.75rem; /* Giảm khoảng cách dưới của <p> */
+  }
+
+  .nav {
+    font-size: 3rem; /* Giảm kích thước font cho màn hình nhỏ */
+  }
+
+  .nav.left {
+    transform: translateX(-50%) translateY(-50%); /* Di chuyển lại nút sang vị trí hợp lý */
+    left: 10px; /* Đặt nút trái gần bên trái màn hình */
+    margin-left: 10px;
+  }
+
+  .nav.right {
+    transform: translateX(50%) translateY(-50%); /* Di chuyển lại nút sang vị trí hợp lý */
+    right: 10px; /* Đặt nút phải gần bên phải màn hình */
+    margin-right: 10px;
+  }
+}

@@ -40,9 +40,9 @@ const Navigation = ({ setSelectedSection }) => {
             onClick={(e) => { e.preventDefault(); setSelectedSection('cards'); }}
             >Nhân Vật Có Tầm Ảnh Hưởng Đến Bác Hồ</a>
           <a 
-            href='#world-map'
+            href='#heritage'
             className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase"
-            onClick={(e) => { e.preventDefault(); setSelectedSection('world-map'); }}
+            onClick={(e) => { e.preventDefault(); setSelectedSection('heritage'); }}
             >Di Sản
           </a>
           <a

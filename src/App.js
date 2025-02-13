@@ -7,6 +7,7 @@ import LoadingSpinnerOverlay from "./components/Spinner/LoadingSpinnerOverlay";
 const Home = React.lazy(() => import("./components/home"));
 const Map = React.lazy(() => import("./components/map"));
 const Cards = React.lazy(() => import("./components/cards"));
+const Heritage = React.lazy(() => import("./components/heritage"));
 const QA = React.lazy(() => import("./components/form-quizz"));
 
 function App() {
@@ -19,11 +20,19 @@ function App() {
         if (selectedSection === "home") {
           setSelectedSection("world-map");
         } else if (selectedSection === "world-map") {
+          setSelectedSection("cards");
+        } else if (selectedSection === "cards") {
+          setSelectedSection("heritage");
+        } else if (selectedSection === "heritage") {
           setSelectedSection("quizz");
         }
       } else {
         // Scrolling up
         if (selectedSection === "quizz") {
+          setSelectedSection("heritage");
+        } else if (selectedSection === "heritage") {
+          setSelectedSection("cards");
+        } else if (selectedSection === "cards") {
           setSelectedSection("world-map");
         } else if (selectedSection === "world-map") {
           setSelectedSection("home");
@@ -45,8 +54,7 @@ function App() {
         {selectedSection === "home" && <Home />}
         {selectedSection === "world-map" && <Map />}
         {selectedSection === "cards" && <Cards />}
-        {selectedSection === "heritage" && <Map />}{" "}
-        {/* Giả sử đây là phần Di Sản */}
+        {selectedSection === "heritage" && <Heritage />}
         {selectedSection === "quizz" && <QA />}
       </Suspense>
     </>

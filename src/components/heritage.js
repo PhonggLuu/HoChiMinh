@@ -22,7 +22,7 @@ const Heritage = () => {
                   lineHeight: "1.4",
                   textAlign: "center",
                   textTransform: "uppercase",
-                  marginLeft: "20 px",
+                  marginLeft: "28px",
                   textShadow:
                     "rgba(39, 34, 27, 0.4) 0.0441942em 0.0441942em 0em",
                 }}
@@ -33,6 +33,7 @@ const Heritage = () => {
                     color: "rgb(253, 201, 14)",
                     textDecoration: "underline",
                     textDecorationColor: "rgb(0, 0, 0)",
+                    marginRight: "2px",
                   }}
                 >
                   DI&nbsp;

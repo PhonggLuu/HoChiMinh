@@ -1,12 +1,15 @@
 import React from 'react';
-import './navigation.css'; // Đảm bảo bạn có file CSS này
+import './navigation.css';
 
-const Navigation = () => {
+const Navigation = ({ setSelectedSection }) => {
   return (
     <header className="navbar">
       <div className="flex flex-col justify-between h-full">
         <div className="flex flex-col justify-center items-center p-4 text-white">
-          <a href="#home" className="vertical-text text-base uppercase border-l-[2.5px] border-yellow hover:border-l-[2.5px] hover:border-yellow">
+          <a
+            href='#home'
+            className="vertical-text text-base uppercase border-l-[2.5px] border-yellow hover:border-l-[2.5px] hover:border-yellow"
+            onClick={(e) => { e.preventDefault(); setSelectedSection('home'); }} >
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -25,10 +28,29 @@ const Navigation = () => {
         </div>
 
         <nav className="flex flex-col items-center gap-6 text-white p-4">
-          <a href="#world-map" className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Hành trình</a>
-          <a href="#world-map" className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Nhân Vật Có Tầm Ảnh Hưởng Đến Bác Hồ</a>
-          <a href="#world-map" className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Di Sản</a>
-          <a href="#quiz" className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase">Q&A</a>
+          <a 
+            href='#world-map'
+            className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase"
+            onClick={(e) => { e.preventDefault(); setSelectedSection('world-map'); }}
+            >Hành trình
+          </a>
+          <a 
+            href='#cards'
+            className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase"
+            onClick={(e) => { e.preventDefault(); setSelectedSection('cards'); }}
+            >Nhân Vật Có Tầm Ảnh Hưởng Đến Bác Hồ</a>
+          <a 
+            href='#world-map'
+            className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase"
+            onClick={(e) => { e.preventDefault(); setSelectedSection('world-map'); }}
+            >Di Sản
+          </a>
+          <a
+            href='#quizz' 
+            className="vertical-text text-sm hover:border-l-[2.5px] hover:border-yellow uppercase"
+            onClick={(e) => { e.preventDefault(); setSelectedSection('quizz'); }}
+            >Q&A
+          </a>
         </nav>
       </div>
     </header>

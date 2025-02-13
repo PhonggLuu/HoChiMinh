@@ -117,7 +117,7 @@ const QA = () => {
 
   if (isQuizFinished) {
     return (
-      <div id="quiz" className="section-container">
+      <div id="quizz" className="section-container">
         <h1 className="section-title">Quizz</h1>
         <div className="quiz-section">
           <p>Bạn đã trả lời hết tất cả câu hỏi!</p>
@@ -127,7 +127,7 @@ const QA = () => {
   }
 
   return (
-    <div id="quiz" className="section-container">
+    <div id="quizz" className="section-container">
         <h1 className="section-title">Quizz</h1>
         <div className="quiz-section">
             <div className="quiz-question">

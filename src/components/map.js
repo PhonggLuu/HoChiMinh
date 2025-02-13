@@ -40,8 +40,8 @@ const Map = () => {
 
   return (
     <>
-      <div id="world-map" className="world-map">
-        <div className="map-container">
+      <div id="map" className="world-map">
+        <div className="map-container" style={{height: "100vh"}}>
           <svg
             baseProfile="tiny"
             strokeLinecap="round"
